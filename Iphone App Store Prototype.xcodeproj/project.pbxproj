@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		D96D5EC427D0E0A500EC41D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D5EC327D0E0A500EC41D9 /* AppDelegate.swift */; };
 		D96D5EC627D0E0A500EC41D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D5EC527D0E0A500EC41D9 /* SceneDelegate.swift */; };
-		D96D5EC827D0E0A500EC41D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D5EC727D0E0A500EC41D9 /* ViewController.swift */; };
 		D96D5ECB27D0E0A500EC41D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96D5EC927D0E0A500EC41D9 /* Main.storyboard */; };
 		D96D5ECD27D0E0A700EC41D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96D5ECC27D0E0A700EC41D9 /* Assets.xcassets */; };
 		D96D5ED027D0E0A700EC41D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96D5ECE27D0E0A700EC41D9 /* LaunchScreen.storyboard */; };
 		D96D5EDB27D0E0A700EC41D9 /* Iphone_App_Store_PrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D5EDA27D0E0A700EC41D9 /* Iphone_App_Store_PrototypeTests.swift */; };
 		D96D5EE527D0E0A700EC41D9 /* Iphone_App_Store_PrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D5EE427D0E0A700EC41D9 /* Iphone_App_Store_PrototypeUITests.swift */; };
 		D96D5EE727D0E0A700EC41D9 /* Iphone_App_Store_PrototypeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D5EE627D0E0A700EC41D9 /* Iphone_App_Store_PrototypeUITestsLaunchTests.swift */; };
+		D9A990BA27D132DE000D455A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A990B827D132DE000D455A /* BaseViewController.swift */; };
+		D9A990BB27D132DE000D455A /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A990B927D132DE000D455A /* TodayViewController.swift */; };
+		D9A990BD27D13320000D455A /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A990BC27D13320000D455A /* GamesViewController.swift */; };
+		D9A990BF27D1333F000D455A /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A990BE27D1333F000D455A /* AppsViewController.swift */; };
+		D9A990C127D1335C000D455A /* UpdatesViewSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A990C027D1335C000D455A /* UpdatesViewSearch.swift */; };
+		D9A990C327D13383000D455A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A990C227D13383000D455A /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,6 @@
 		D96D5EC027D0E0A500EC41D9 /* Iphone App Store Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Iphone App Store Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96D5EC327D0E0A500EC41D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D96D5EC527D0E0A500EC41D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D96D5EC727D0E0A500EC41D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D96D5ECA27D0E0A500EC41D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D96D5ECC27D0E0A700EC41D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D96D5ECF27D0E0A700EC41D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		D96D5EE027D0E0A700EC41D9 /* Iphone App Store PrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Iphone App Store PrototypeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96D5EE427D0E0A700EC41D9 /* Iphone_App_Store_PrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iphone_App_Store_PrototypeUITests.swift; sourceTree = "<group>"; };
 		D96D5EE627D0E0A700EC41D9 /* Iphone_App_Store_PrototypeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iphone_App_Store_PrototypeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D9A990B827D132DE000D455A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D9A990B927D132DE000D455A /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		D9A990BC27D13320000D455A /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		D9A990BE27D1333F000D455A /* AppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsViewController.swift; sourceTree = "<group>"; };
+		D9A990C027D1335C000D455A /* UpdatesViewSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesViewSearch.swift; sourceTree = "<group>"; };
+		D9A990C227D13383000D455A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +153,12 @@
 		D96D5EF427D0E0E500EC41D9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D96D5EC727D0E0A500EC41D9 /* ViewController.swift */,
+				D9A990B827D132DE000D455A /* BaseViewController.swift */,
+				D9A990B927D132DE000D455A /* TodayViewController.swift */,
+				D9A990BC27D13320000D455A /* GamesViewController.swift */,
+				D9A990BE27D1333F000D455A /* AppsViewController.swift */,
+				D9A990C027D1335C000D455A /* UpdatesViewSearch.swift */,
+				D9A990C227D13383000D455A /* SearchViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -338,9 +353,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D96D5EC827D0E0A500EC41D9 /* ViewController.swift in Sources */,
+				D9A990BB27D132DE000D455A /* TodayViewController.swift in Sources */,
+				D9A990BA27D132DE000D455A /* BaseViewController.swift in Sources */,
+				D9A990C327D13383000D455A /* SearchViewController.swift in Sources */,
+				D9A990BF27D1333F000D455A /* AppsViewController.swift in Sources */,
+				D9A990C127D1335C000D455A /* UpdatesViewSearch.swift in Sources */,
 				D96D5EC427D0E0A500EC41D9 /* AppDelegate.swift in Sources */,
 				D96D5EC627D0E0A500EC41D9 /* SceneDelegate.swift in Sources */,
+				D9A990BD27D13320000D455A /* GamesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
