@@ -19,7 +19,7 @@
 		D9A990BB27D132DE000D455A /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A990B927D132DE000D455A /* TodayViewController.swift */; };
 		D9A990BD27D13320000D455A /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A990BC27D13320000D455A /* GamesViewController.swift */; };
 		D9A990BF27D1333F000D455A /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A990BE27D1333F000D455A /* AppsViewController.swift */; };
-		D9A990C127D1335C000D455A /* UpdatesViewSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A990C027D1335C000D455A /* UpdatesViewSearch.swift */; };
+		D9A990C127D1335C000D455A /* UpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A990C027D1335C000D455A /* UpdatesViewController.swift */; };
 		D9A990C327D13383000D455A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A990C227D13383000D455A /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +57,7 @@
 		D9A990B927D132DE000D455A /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		D9A990BC27D13320000D455A /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
 		D9A990BE27D1333F000D455A /* AppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsViewController.swift; sourceTree = "<group>"; };
-		D9A990C027D1335C000D455A /* UpdatesViewSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesViewSearch.swift; sourceTree = "<group>"; };
+		D9A990C027D1335C000D455A /* UpdatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesViewController.swift; sourceTree = "<group>"; };
 		D9A990C227D13383000D455A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,7 +157,7 @@
 				D9A990B927D132DE000D455A /* TodayViewController.swift */,
 				D9A990BC27D13320000D455A /* GamesViewController.swift */,
 				D9A990BE27D1333F000D455A /* AppsViewController.swift */,
-				D9A990C027D1335C000D455A /* UpdatesViewSearch.swift */,
+				D9A990C027D1335C000D455A /* UpdatesViewController.swift */,
 				D9A990C227D13383000D455A /* SearchViewController.swift */,
 			);
 			path = Controllers;
@@ -357,7 +357,7 @@
 				D9A990BA27D132DE000D455A /* BaseViewController.swift in Sources */,
 				D9A990C327D13383000D455A /* SearchViewController.swift in Sources */,
 				D9A990BF27D1333F000D455A /* AppsViewController.swift in Sources */,
-				D9A990C127D1335C000D455A /* UpdatesViewSearch.swift in Sources */,
+				D9A990C127D1335C000D455A /* UpdatesViewController.swift in Sources */,
 				D96D5EC427D0E0A500EC41D9 /* AppDelegate.swift in Sources */,
 				D96D5EC627D0E0A500EC41D9 /* SceneDelegate.swift in Sources */,
 				D9A990BD27D13320000D455A /* GamesViewController.swift in Sources */,
