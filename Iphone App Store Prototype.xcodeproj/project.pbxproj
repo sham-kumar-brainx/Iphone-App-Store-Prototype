@@ -109,6 +109,7 @@
 				D96D5EF627D0E10A00EC41D9 /* Resources */,
 				D96D5EF527D0E0F500EC41D9 /* Supporting Files */,
 				D96D5EF327D0E0C300EC41D9 /* Storyboards */,
+				D96D5ED127D0E0A700EC41D9 /* Info.plist */,
 			);
 			path = "Iphone App Store Prototype";
 			sourceTree = "<group>";
@@ -152,7 +153,6 @@
 			children = (
 				D96D5EC327D0E0A500EC41D9 /* AppDelegate.swift */,
 				D96D5EC527D0E0A500EC41D9 /* SceneDelegate.swift */,
-				D96D5ED127D0E0A700EC41D9 /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
