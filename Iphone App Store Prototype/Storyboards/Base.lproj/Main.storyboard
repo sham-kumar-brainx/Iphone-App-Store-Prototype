@@ -7,39 +7,12 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Bold.ttf">
+            <string>SFUIText-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Today-->
-        <scene sceneID="sjM-kS-aEt">
-            <objects>
-                <navigationController navigationBarHidden="YES" id="9oW-Xd-ihb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Today" image="Today" selectedImage="Selected Today" id="3ML-nr-Aea"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tzo-rg-IXf">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="SP0-q3-U9a" kind="relationship" relationship="rootViewController" id="wb0-Zv-lHd"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KvJ-Ml-v4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1939" y="410"/>
-        </scene>
-        <!--Today View Controller-->
-        <scene sceneID="pO8-M6-Ebm">
-            <objects>
-                <viewController storyboardIdentifier="TodayViewController" id="SP0-q3-U9a" customClass="TodayViewController" customModule="Iphone_App_Store_Prototype" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SsZ-jx-aI4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Czc-RA-3Zc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="hxF-8x-N0e"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vee-Wn-TR8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1939" y="1128"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sap-cG-9Bh">
             <objects>
@@ -61,6 +34,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEm-yD-C53" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-433" y="-337"/>
+        </scene>
+        <!--Today-->
+        <scene sceneID="sjM-kS-aEt">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="9oW-Xd-ihb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Today" image="Today" selectedImage="Selected Today" id="3ML-nr-Aea"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tzo-rg-IXf">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SP0-q3-U9a" kind="relationship" relationship="rootViewController" id="wb0-Zv-lHd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KvJ-Ml-v4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1939" y="410"/>
         </scene>
         <!--Updates-->
         <scene sceneID="OLt-He-ngo">
@@ -125,6 +114,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lit-hS-VRr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1104" y="410"/>
+        </scene>
+        <!--Today View Controller-->
+        <scene sceneID="pO8-M6-Ebm">
+            <objects>
+                <viewController storyboardIdentifier="TodayViewController" id="SP0-q3-U9a" customClass="TodayViewController" customModule="Iphone_App_Store_Prototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SsZ-jx-aI4" customClass="TodayView" customModule="Iphone_App_Store_Prototype" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4H-Ec-SHG" userLabel="Today Content View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bi-hX-EtO" userLabel="Top View">
+                                        <rect key="frame" x="19" y="15" width="376" height="62"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEDNESDAY 2 MAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyI-vg-VxW" userLabel="Date">
+                                                <rect key="frame" x="0.0" y="0.0" width="129.5" height="16"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxr-s0-sfk" userLabel="Title">
+                                                <rect key="frame" x="0.0" y="22" width="100" height="40"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="33"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="Z5z-Xo-I1i" userLabel="Profile Image">
+                                                <rect key="frame" x="336" y="18" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="KXh-4b-JWW"/>
+                                                    <constraint firstAttribute="width" constant="40" id="cTi-Mn-PHE"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gyI-vg-VxW" firstAttribute="top" secondItem="8bi-hX-EtO" secondAttribute="top" id="AP3-GO-czG"/>
+                                            <constraint firstAttribute="bottom" secondItem="Mxr-s0-sfk" secondAttribute="bottom" id="IdZ-Ig-5nn"/>
+                                            <constraint firstItem="Mxr-s0-sfk" firstAttribute="leading" secondItem="8bi-hX-EtO" secondAttribute="leading" id="Kpx-4F-a93"/>
+                                            <constraint firstAttribute="trailing" secondItem="Z5z-Xo-I1i" secondAttribute="trailing" id="iHj-mu-hsN"/>
+                                            <constraint firstItem="gyI-vg-VxW" firstAttribute="leading" secondItem="8bi-hX-EtO" secondAttribute="leading" id="lTl-WV-Ikz"/>
+                                            <constraint firstAttribute="height" constant="62" id="mvx-bm-f8E"/>
+                                            <constraint firstAttribute="bottom" secondItem="Z5z-Xo-I1i" secondAttribute="bottom" constant="4" id="zQ6-Ch-0iq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="8bi-hX-EtO" firstAttribute="top" secondItem="I4H-Ec-SHG" secondAttribute="top" constant="15" id="HUG-Yz-R6D"/>
+                                    <constraint firstItem="8bi-hX-EtO" firstAttribute="leading" secondItem="I4H-Ec-SHG" secondAttribute="leading" constant="19" id="cY9-pk-e20"/>
+                                    <constraint firstAttribute="trailing" secondItem="8bi-hX-EtO" secondAttribute="trailing" constant="19" id="rmy-DD-fXB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Czc-RA-3Zc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Czc-RA-3Zc" firstAttribute="bottom" secondItem="I4H-Ec-SHG" secondAttribute="bottom" id="JzA-PE-RLQ"/>
+                            <constraint firstItem="Czc-RA-3Zc" firstAttribute="trailing" secondItem="I4H-Ec-SHG" secondAttribute="trailing" id="bFy-NF-IMR"/>
+                            <constraint firstItem="I4H-Ec-SHG" firstAttribute="leading" secondItem="Czc-RA-3Zc" secondAttribute="leading" id="gZP-EO-rFt"/>
+                            <constraint firstItem="I4H-Ec-SHG" firstAttribute="top" secondItem="Czc-RA-3Zc" secondAttribute="top" id="rmm-Xe-7Zd"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="date" destination="gyI-vg-VxW" id="W3S-kH-17v"/>
+                            <outlet property="todayTitle" destination="Mxr-s0-sfk" id="44c-YJ-kYA"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="hxF-8x-N0e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vee-Wn-TR8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1939.1304347826087" y="1127.6785714285713"/>
         </scene>
         <!--Games View Controller-->
         <scene sceneID="lvI-1P-atn">
@@ -194,12 +255,13 @@
     <resources>
         <image name="Apps" width="22.5" height="22.5"/>
         <image name="Games" width="20.5" height="22.5"/>
+        <image name="Profile" width="40" height="40"/>
         <image name="Search" width="21" height="22"/>
         <image name="Selected Apps" width="22.5" height="22.5"/>
         <image name="Selected Games" width="20.5" height="22.5"/>
         <image name="Selected Today" width="18" height="22"/>
         <image name="Today" width="18" height="22"/>
-        <image name="Updates" width="19" height="23"/>
+        <image name="Updates" width="128" height="128"/>
         <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
