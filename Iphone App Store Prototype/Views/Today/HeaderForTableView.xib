@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Bold.ttf">
+            <string>SFUIText-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HeaderForTableView" id="tlz-Sa-OxI" customClass="HeaderForTableView" customModule="Iphone_App_Store_Prototype" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="307" height="135"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIP-lO-pY0">
+                    <rect key="frame" x="19" y="44" width="269" height="91"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEDNESDAY 2 MAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tek-Tf-w5p" userLabel="Date">
+                            <rect key="frame" x="0.0" y="0.0" width="129.5" height="16"/>
+                            <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuK-j1-UNG" userLabel="Title">
+                            <rect key="frame" x="0.0" y="51.5" width="100" height="39.5"/>
+                            <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="33"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="ahT-T2-OPQ" userLabel="Profile Image">
+                            <rect key="frame" x="229" y="47" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="OGL-xy-cQH"/>
+                                <constraint firstAttribute="width" constant="40" id="OlJ-cE-peG"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="HuK-j1-UNG" firstAttribute="leading" secondItem="OIP-lO-pY0" secondAttribute="leading" id="7Wv-Z9-iAN"/>
+                        <constraint firstAttribute="bottom" secondItem="HuK-j1-UNG" secondAttribute="bottom" id="C6h-31-QFo"/>
+                        <constraint firstItem="Tek-Tf-w5p" firstAttribute="leading" secondItem="OIP-lO-pY0" secondAttribute="leading" id="Gvc-vJ-RMv"/>
+                        <constraint firstAttribute="trailing" secondItem="ahT-T2-OPQ" secondAttribute="trailing" id="iBg-jm-M7M"/>
+                        <constraint firstAttribute="bottom" secondItem="ahT-T2-OPQ" secondAttribute="bottom" constant="4" id="mB7-6H-Tw4"/>
+                        <constraint firstItem="Tek-Tf-w5p" firstAttribute="top" secondItem="OIP-lO-pY0" secondAttribute="top" id="pwR-y5-agT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ozH-o7-bKx"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="OIP-lO-pY0" firstAttribute="leading" secondItem="ozH-o7-bKx" secondAttribute="leading" constant="19" id="0Zn-31-GdP"/>
+                <constraint firstItem="ozH-o7-bKx" firstAttribute="bottom" secondItem="OIP-lO-pY0" secondAttribute="bottom" id="FNd-PH-86H"/>
+                <constraint firstItem="ozH-o7-bKx" firstAttribute="trailing" secondItem="OIP-lO-pY0" secondAttribute="trailing" constant="19" id="GEa-V2-tDt"/>
+                <constraint firstItem="ozH-o7-bKx" firstAttribute="top" secondItem="OIP-lO-pY0" secondAttribute="top" id="Sph-go-NPu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="date" destination="Tek-Tf-w5p" id="Pfw-QK-SAG"/>
+                <outlet property="dayName" destination="HuK-j1-UNG" id="ecs-Wp-cnD"/>
+                <outlet property="profileImage" destination="ahT-T2-OPQ" id="dpb-BT-fpY"/>
+            </connections>
+            <point key="canvasLocation" x="54.347826086956523" y="408.14732142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Profile" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -3,8 +3,7 @@ import UIKit
 class TodayView: UIView {
     
     // MARK: - Outlets
-    @IBOutlet weak var date: UILabel!
-    @IBOutlet weak var todayTitle: UILabel!
+    @IBOutlet var todayTableView: UITableView!
     
     // MARK: - Lifecycle Methods
     override func awakeFromNib() {
@@ -15,6 +14,6 @@ class TodayView: UIView {
     
     // MARK: - Private Methods
     private func formatUIEObjects() {
-        date.textColor = Color.lightBrownColor
+        todayTableView.separatorStyle = .none
     }
 }
