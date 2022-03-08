@@ -35,7 +35,7 @@
         <scene sceneID="sjM-kS-aEt">
             <objects>
                 <navigationController navigationBarHidden="YES" id="9oW-Xd-ihb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Today" image="Today" selectedImage="Selected Today" id="3ML-nr-Aea"/>
+                    <tabBarItem key="tabBarItem" title="Today" image="Today" selectedImage="Selected_Today" id="3ML-nr-Aea"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tzo-rg-IXf">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -67,7 +67,7 @@
         <scene sceneID="yJd-ch-sWr">
             <objects>
                 <navigationController navigationBarHidden="YES" id="1DE-VN-TnW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Games" image="Games" selectedImage="Selected Games" id="Akb-8c-3u5"/>
+                    <tabBarItem key="tabBarItem" title="Games" image="Games" selectedImage="Selected_Games" id="Akb-8c-3u5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Clf-qF-g6S">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -83,7 +83,7 @@
         <scene sceneID="XA4-ga-dSa">
             <objects>
                 <navigationController id="DOf-nC-LOg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Apps" image="Apps" selectedImage="Selected Apps" id="p0W-hD-KSW"/>
+                    <tabBarItem key="tabBarItem" title="Apps" image="Apps" selectedImage="Selected_Apps" id="p0W-hD-KSW"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e0R-1x-qG4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -270,9 +270,9 @@
         <image name="Apps" width="22.5" height="22.5"/>
         <image name="Games" width="20.5" height="22.5"/>
         <image name="Search" width="21" height="22"/>
-        <image name="Selected Apps" width="22.5" height="22.5"/>
-        <image name="Selected Games" width="20.5" height="22.5"/>
-        <image name="Selected Today" width="18" height="22"/>
+        <image name="Selected_Apps" width="22.5" height="22.5"/>
+        <image name="Selected_Games" width="20.5" height="22.5"/>
+        <image name="Selected_Today" width="18" height="22"/>
         <image name="Today" width="18" height="22"/>
         <image name="Updates" width="128" height="128"/>
         <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>

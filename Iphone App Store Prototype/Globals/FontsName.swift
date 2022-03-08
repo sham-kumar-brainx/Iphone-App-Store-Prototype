@@ -1,6 +1,6 @@
 import Foundation
 
-struct FontsName {
+enum FontsName {
     
     // MARK: - Static Properties
     static let sfUIDisplayBold = "SFUIDisplay-Bold"

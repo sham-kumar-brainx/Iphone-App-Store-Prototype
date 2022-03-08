@@ -13,16 +13,16 @@ class TodayViewController: BaseViewController {
     
     // MARK: - Private Methods
     private func setUpTableView() {
-        todayView.todayTableView.register(HeaderForTableView.nibForTableHeaderFooter(), forHeaderFooterViewReuseIdentifier: HeaderForTableView.identifierForTableHeaderFooter)
+        todayView.todayTableView.register(HeaderForTableView.nibForView(), forHeaderFooterViewReuseIdentifier: HeaderForTableView.identifierForView)
         todayView.todayTableView.register(TableCellTypeA.nibForTable(), forCellReuseIdentifier: TableCellTypeA.reuseIdentifierForTable)
         todayView.todayTableView.register(TableCellTypeB.nibForTable(), forCellReuseIdentifier: TableCellTypeB.reuseIdentifierForTable)
     }
 }
 
-// MARK: - UITableViewDelegate
-
+// MARK: - Extention for confroming UITableViewDelegate, UITableViewDataSource
 extension TodayViewController: UITableViewDelegate, UITableViewDataSource {
     
+    // MARK: - Internal Methods
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -33,20 +33,25 @@ extension TodayViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: TableCellTypeA.reuseIdentifierForTable, for: indexPath) as? TableCellTypeA else { fatalError("xib doesn't exist")
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: TableCellTypeA.reuseIdentifierForTable, for: indexPath) as? TableCellTypeA else {
+                fatalError("Xib doesn't exist")
             }
             return cell
             
         } else {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: TableCellTypeB.reuseIdentifierForTable, for: indexPath) as? TableCellTypeB else { fatalError("xib doesn't exist")
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: TableCellTypeB.reuseIdentifierForTable, for: indexPath) as? TableCellTypeB else {
+                fatalError("Xib doesn't exist")
             }
             return cell
         }
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderForTableView.identifierForTableHeaderFooter) as? HeaderForTableView else {
-            fatalError("xib doesn't exist")
+        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderForTableView.identifierForView) as? HeaderForTableView else {
+            fatalError("Xib doesn't exist")
+        }
+        if section > 0 {
+            headerView.profileImage.isHidden = true
         }
         return headerView
     }

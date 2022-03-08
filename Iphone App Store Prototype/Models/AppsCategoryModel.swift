@@ -1,10 +1,10 @@
 import Foundation
 
-struct GameRecommendModel {
+struct AppsCategoryModel {
     
     // MARK: - Internal Properties
-    let feature: String
     let appName: String
     let appDescription: String
     let appIconImage: String
+    let inAppPurchaseStatus: String
 }

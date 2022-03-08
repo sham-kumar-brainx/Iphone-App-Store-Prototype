@@ -1,6 +1,6 @@
 import Foundation
 
-struct Images {
+enum Images {
     
     // MARK: - Static Properties
     static let appIcon1 = "App_Icon_1"

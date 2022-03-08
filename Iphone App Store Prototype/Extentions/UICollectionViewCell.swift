@@ -3,12 +3,12 @@ import UIKit
 extension UICollectionViewCell {
     
     // MARK: - Static Properties
-    static var reuseIdentifier: String {
+    static var reuseIdentifierForCollection: String {
         return String(describing: self)
     }
     
     // MARK: - Static Methods
-    static func nib() -> UINib {
-        return UINib(nibName: self.reuseIdentifier, bundle: nil)
+    static func nibForCollection() -> UINib {
+        return UINib(nibName: self.reuseIdentifierForCollection, bundle: nil)
     }
 }

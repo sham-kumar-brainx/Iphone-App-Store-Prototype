@@ -1,4 +1,3 @@
-import Foundation
 import UIKit
 
 class TableCellTypeA: UITableViewCell {
@@ -19,11 +18,7 @@ class TableCellTypeA: UITableViewCell {
     // MARK: - Private Methods
     private func configureView() {
         primaryTitle.textColor = Color.lightBrownColor
-        contentContainerView.layer.shadowColor = UIColor.gray.cgColor
-        contentContainerView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        contentContainerView.layer.shadowRadius = 12.0
-        contentContainerView.layer.shadowOpacity = 0.5
-        appImage.layer.cornerRadius = 10
-        appImage.clipsToBounds
+        contentContainerView.addShadow(color: .gray, alpha: 0.5, x: 0, y: 0, radius: 12)
+        appImage.setCornerRadius(10.0, andClipContent: true)
     }
 }

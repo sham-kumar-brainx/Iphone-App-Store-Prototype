@@ -1,13 +1,13 @@
-import Foundation
 import UIKit
 
-class HorizontalCollectionCell: UICollectionViewCell {
+class AppsCategoryCell: UICollectionViewCell {
     
     // MARK: - Outlets
-    @IBOutlet weak var feature: UILabel!
     @IBOutlet weak var appIconImage: UIImageView!
-    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var appName: UILabel!
     @IBOutlet weak var appDescription: UILabel!
+    @IBOutlet weak var inAppPurchase: UILabel!
+    @IBOutlet weak var getButton: UIButton!
     
     // MARK: - Lifecycle Methods
     override func awakeFromNib() {
@@ -17,15 +17,14 @@ class HorizontalCollectionCell: UICollectionViewCell {
     
     // MARK: - Private Methods
     private func configureView() {
-        appIconImage.clipsToBounds = true
-        appIconImage.layer.cornerRadius = 10.0
+        getButton.setCornerRadius(15)
     }
     
     // MARK: - Internal Methods
-    func setCellDataWith(_ model: GameRecommendModel) {
-        feature.text = model.feature
+    func setCellDataWith(_ model: AppsCategoryModel) {
+        appName.text = model.appName
         appDescription.text = model.appDescription
-        title.text = model.appName
+        inAppPurchase.text = model.inAppPurchaseStatus
         appIconImage.image = UIImage(named: model.appIconImage)
     }
 }
