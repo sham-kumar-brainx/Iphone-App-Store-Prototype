@@ -22,7 +22,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tuu-wB-Bhk" userLabel="Title">
-                            <rect key="frame" x="0.0" y="4.5" width="86" height="39.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="86" height="44"/>
                             <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="33"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -37,6 +37,7 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="Tuu-wB-Bhk" firstAttribute="centerY" secondItem="26w-6j-GY9" secondAttribute="centerY" id="DJQ-ef-73P"/>
                         <constraint firstAttribute="trailing" secondItem="YhV-GY-yx6" secondAttribute="trailing" id="EVi-bm-Mh1"/>
                         <constraint firstAttribute="bottom" secondItem="Tuu-wB-Bhk" secondAttribute="bottom" id="EkB-uw-jCD"/>
                         <constraint firstItem="Tuu-wB-Bhk" firstAttribute="leading" secondItem="26w-6j-GY9" secondAttribute="leading" id="TYM-XI-ezZ"/>

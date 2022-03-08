@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Bold.otf">
+            <string>SFUIDisplay-Bold</string>
+        </array>
+        <array key="SF-UI-Text-Medium.ttf">
+            <string>SFUIText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AppsCategoryHeader" id="rbl-vh-GUm" customClass="AppsCategoryHeader" customModule="Iphone_App_Store_Prototype" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GIw-po-oPK">
+                    <rect key="frame" x="0.0" y="0.0" width="326" height="64"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nyb-tX-faR" userLabel="lineView">
+                            <rect key="frame" x="0.0" y="0.0" width="326" height="1"/>
+                            <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.80000000000000004" id="Ab5-Zd-HOd"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="App Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vg9-M1-1Kb">
+                            <rect key="frame" x="0.0" y="11" width="271" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="0y1-oM-luX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Bold" family="SF UI Display" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="App Category Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOs-oc-MKd">
+                            <rect key="frame" x="0.0" y="43" width="271" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="QHJ-k0-YoB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="13"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBH-EE-Mh6">
+                            <rect key="frame" x="279" y="17" width="47" height="30"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="See All"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Nyb-tX-faR" firstAttribute="leading" secondItem="GIw-po-oPK" secondAttribute="leading" id="3pv-ft-U2d"/>
+                        <constraint firstAttribute="trailing" secondItem="Nyb-tX-faR" secondAttribute="trailing" id="3zb-Ft-N6G"/>
+                        <constraint firstItem="vg9-M1-1Kb" firstAttribute="leading" secondItem="GIw-po-oPK" secondAttribute="leading" id="42Z-l6-VjC"/>
+                        <constraint firstItem="oBH-EE-Mh6" firstAttribute="leading" secondItem="vg9-M1-1Kb" secondAttribute="trailing" constant="8" id="7OJ-5S-wzG"/>
+                        <constraint firstAttribute="trailing" secondItem="oBH-EE-Mh6" secondAttribute="trailing" id="7es-U2-T3u"/>
+                        <constraint firstItem="vg9-M1-1Kb" firstAttribute="top" secondItem="Nyb-tX-faR" secondAttribute="bottom" constant="10" id="8rb-Pe-FVo"/>
+                        <constraint firstItem="oBH-EE-Mh6" firstAttribute="leading" secondItem="fOs-oc-MKd" secondAttribute="trailing" constant="8" id="Kgd-fM-3vn"/>
+                        <constraint firstItem="Nyb-tX-faR" firstAttribute="top" secondItem="GIw-po-oPK" secondAttribute="top" id="Um6-H4-uvC"/>
+                        <constraint firstItem="fOs-oc-MKd" firstAttribute="leading" secondItem="GIw-po-oPK" secondAttribute="leading" id="l1D-fr-SuH"/>
+                        <constraint firstItem="oBH-EE-Mh6" firstAttribute="centerY" secondItem="GIw-po-oPK" secondAttribute="centerY" id="mH5-4X-hMF"/>
+                        <constraint firstItem="fOs-oc-MKd" firstAttribute="top" secondItem="vg9-M1-1Kb" secondAttribute="bottom" constant="5" id="xgG-2Y-d9W"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="rWc-4p-wZK"/>
+            <constraints>
+                <constraint firstItem="GIw-po-oPK" firstAttribute="top" secondItem="rbl-vh-GUm" secondAttribute="top" id="4Fc-tg-YEs"/>
+                <constraint firstAttribute="bottom" secondItem="GIw-po-oPK" secondAttribute="bottom" id="KA2-uT-ghY"/>
+                <constraint firstAttribute="trailing" secondItem="GIw-po-oPK" secondAttribute="trailing" id="N0y-fN-U3t"/>
+                <constraint firstItem="GIw-po-oPK" firstAttribute="leading" secondItem="rbl-vh-GUm" secondAttribute="leading" id="Yma-iJ-R8y"/>
+            </constraints>
+            <point key="canvasLocation" x="169.56521739130437" y="103.79464285714285"/>
+        </collectionReusableView>
+    </objects>
+</document>

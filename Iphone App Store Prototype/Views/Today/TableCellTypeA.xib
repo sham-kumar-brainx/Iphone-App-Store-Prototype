@@ -24,25 +24,25 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sAV-MJ-5je" userLabel="Content Container View">
-                        <rect key="frame" x="25" y="15" width="261" height="428"/>
+                        <rect key="frame" x="19" y="15" width="273" height="428"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="57G-JD-Mc7">
-                                <rect key="frame" x="0.0" y="0.0" width="261" height="428"/>
+                                <rect key="frame" x="0.0" y="0.0" width="273" height="428"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEEP DIVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uf3-dN-3A1">
-                                <rect key="frame" x="20" y="20" width="233" height="18"/>
+                                <rect key="frame" x="20" y="20" width="245" height="18"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gain a new perspetive " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nov-ai-b1E">
-                                <rect key="frame" x="20" y="53" width="233" height="72"/>
+                                <rect key="frame" x="20" y="53" width="245" height="72"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SKRWT takes your photo to new heights" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctZ-J1-qEO">
-                                <rect key="frame" x="20" y="393.5" width="233" height="14.5"/>
+                                <rect key="frame" x="20" y="393.5" width="245" height="14.5"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -65,15 +65,16 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="sAV-MJ-5je" firstAttribute="top" secondItem="SDi-cE-L0w" secondAttribute="top" constant="15" id="AjQ-Jq-z8d"/>
                     <constraint firstAttribute="bottom" secondItem="sAV-MJ-5je" secondAttribute="bottom" constant="15" id="Tmc-Tv-Fyp"/>
-                    <constraint firstAttribute="trailing" secondItem="sAV-MJ-5je" secondAttribute="trailing" constant="25" id="VX6-ko-Wat"/>
-                    <constraint firstItem="sAV-MJ-5je" firstAttribute="leading" secondItem="SDi-cE-L0w" secondAttribute="leading" constant="25" id="i52-nj-LNL"/>
+                    <constraint firstAttribute="trailing" secondItem="sAV-MJ-5je" secondAttribute="trailing" constant="19" id="VX6-ko-Wat"/>
+                    <constraint firstItem="sAV-MJ-5je" firstAttribute="leading" secondItem="SDi-cE-L0w" secondAttribute="leading" constant="19" id="i52-nj-LNL"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="backgroundImage" destination="57G-JD-Mc7" id="ial-eP-KN3"/>
+                <outlet property="appImage" destination="57G-JD-Mc7" id="ial-eP-KN3"/>
                 <outlet property="cardDescription" destination="ctZ-J1-qEO" id="vqr-4L-7hg"/>
                 <outlet property="contentContainerView" destination="sAV-MJ-5je" id="Zh6-B8-W4n"/>
                 <outlet property="primaryTitle" destination="uf3-dN-3A1" id="LMW-ly-vlD"/>

@@ -56,6 +56,9 @@
 		D9D1561F27D62ECD0051C526 /* AppsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1561E27D62ECD0051C526 /* AppsCollectionViewCell.swift */; };
 		D9D1562327D63E3D0051C526 /* GameTopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1562127D63E3C0051C526 /* GameTopicModel.swift */; };
 		D9D1562427D63E3D0051C526 /* GameRecommandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1562227D63E3D0051C526 /* GameRecommandModel.swift */; };
+		D9D1562627D71D9A0051C526 /* AppsCategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1562527D71D9A0051C526 /* AppsCategoryHeader.swift */; };
+		D9D1562827D71DDA0051C526 /* AppsCategoryHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9D1562727D71DDA0051C526 /* AppsCategoryHeader.xib */; };
+		D9D1562A27D72A0A0051C526 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1562927D72A0A0051C526 /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +134,9 @@
 		D9D1561E27D62ECD0051C526 /* AppsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9D1562127D63E3C0051C526 /* GameTopicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTopicModel.swift; sourceTree = "<group>"; };
 		D9D1562227D63E3D0051C526 /* GameRecommandModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRecommandModel.swift; sourceTree = "<group>"; };
+		D9D1562527D71D9A0051C526 /* AppsCategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsCategoryHeader.swift; sourceTree = "<group>"; };
+		D9D1562727D71DDA0051C526 /* AppsCategoryHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppsCategoryHeader.xib; sourceTree = "<group>"; };
+		D9D1562927D72A0A0051C526 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,7 @@
 				D939E81A27D1E1CC005F0A3D /* UIColor.swift */,
 				D939E80D27D1E0CB005F0A3D /* UIFonts.swift */,
 				D9D155F627D5E9EC0051C526 /* UITableViewCell.swift */,
+				D9D1562927D72A0A0051C526 /* UIViewController.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -327,13 +334,15 @@
 			children = (
 				D9D1561A27D62E990051C526 /* AppsCollectionViewCell.xib */,
 				D9D1561E27D62ECD0051C526 /* AppsCollectionViewCell.swift */,
-				D9D1560427D611EA0051C526 /* FooterCollectionReuseableView.xib */,
 				D9D1560527D611EA0051C526 /* HorizontalCollectionCell.xib */,
 				D9D1560727D611EA0051C526 /* HorizontalCollectionCell.swift */,
 				D9D1560827D611EA0051C526 /* HeaderCollectionReusableView.xib */,
-				D9D1560A27D611EA0051C526 /* FooterCollectionReuseableView.swift */,
 				D9D1560B27D611EA0051C526 /* HeaderCollectionReusableView.swift */,
+				D9D1560A27D611EA0051C526 /* FooterCollectionReuseableView.swift */,
+				D9D1560427D611EA0051C526 /* FooterCollectionReuseableView.xib */,
 				D9D1561827D61FD90051C526 /* AppsView.swift */,
+				D9D1562527D71D9A0051C526 /* AppsCategoryHeader.swift */,
+				D9D1562727D71DDA0051C526 /* AppsCategoryHeader.xib */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -451,6 +460,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9D1562827D71DDA0051C526 /* AppsCategoryHeader.xib in Resources */,
 				D939E82427D1EAF9005F0A3D /* SF-UI-Display-Medium.otf in Resources */,
 				D96D5ED027D0E0A700EC41D9 /* LaunchScreen.storyboard in Resources */,
 				D939E82327D1EAF9005F0A3D /* SF-UI-Display-Bold.otf in Resources */,
@@ -502,6 +512,8 @@
 				D9A990C327D13383000D455A /* SearchViewController.swift in Sources */,
 				D9D155F527D5E0F20051C526 /* UIStoryboard.swift in Sources */,
 				D9D1561227D611EA0051C526 /* FooterCollectionReuseableView.swift in Sources */,
+				D9D1562A27D72A0A0051C526 /* UIViewController.swift in Sources */,
+				D9D1562627D71D9A0051C526 /* AppsCategoryHeader.swift in Sources */,
 				D9D155FD27D5F7AC0051C526 /* GradientDirection.swift in Sources */,
 				D9D1562427D63E3D0051C526 /* GameRecommandModel.swift in Sources */,
 				D939E81627D1E12B005F0A3D /* Helpers.swift in Sources */,

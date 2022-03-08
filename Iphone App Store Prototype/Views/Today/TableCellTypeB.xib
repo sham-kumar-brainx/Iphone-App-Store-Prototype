@@ -21,13 +21,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNE-KA-0PG" userLabel="Content Container View">
-                        <rect key="frame" x="25" y="15" width="374" height="426"/>
+                        <rect key="frame" x="19" y="15" width="386" height="426"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="In-App Back Image" translatesAutoresizingMaskIntoConstraints="NO" id="5wq-uH-Wtp">
-                                <rect key="frame" x="0.0" y="0.0" width="374" height="426"/>
+                                <rect key="frame" x="0.0" y="0.0" width="386" height="426"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OF THE DAY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Td5-NG-JVw">
-                                <rect key="frame" x="20" y="336.5" width="346" height="39.5"/>
+                                <rect key="frame" x="20" y="336.5" width="358" height="39.5"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="33"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -52,11 +52,14 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="nNE-KA-0PG" secondAttribute="bottom" constant="15" id="HEb-JK-WkS"/>
                     <constraint firstItem="nNE-KA-0PG" firstAttribute="top" secondItem="GEb-fI-aFe" secondAttribute="top" constant="15" id="j5l-zD-M1W"/>
-                    <constraint firstItem="nNE-KA-0PG" firstAttribute="leading" secondItem="GEb-fI-aFe" secondAttribute="leading" constant="25" id="lFQ-Q9-ArA"/>
-                    <constraint firstAttribute="trailing" secondItem="nNE-KA-0PG" secondAttribute="trailing" constant="25" id="qUa-S6-2K1"/>
+                    <constraint firstItem="nNE-KA-0PG" firstAttribute="leading" secondItem="GEb-fI-aFe" secondAttribute="leading" constant="19" id="lFQ-Q9-ArA"/>
+                    <constraint firstAttribute="trailing" secondItem="nNE-KA-0PG" secondAttribute="trailing" constant="19" id="qUa-S6-2K1"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="appImage" destination="5wq-uH-Wtp" id="x2J-bv-AkM"/>
+                <outlet property="appTitle" destination="Td5-NG-JVw" id="0dG-mz-vJB"/>
                 <outlet property="contentContainerView" destination="nNE-KA-0PG" id="X99-NM-AOb"/>
             </connections>
             <point key="canvasLocation" x="-181" y="110"/>

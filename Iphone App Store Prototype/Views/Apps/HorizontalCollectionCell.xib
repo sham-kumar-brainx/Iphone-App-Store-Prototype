@@ -41,8 +41,8 @@
                             <constraint firstAttribute="height" constant="0.80000000000000004" id="5qN-gp-JjJ"/>
                         </constraints>
                     </view>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="j6z-LT-C7R">
-                        <rect key="frame" x="0.0" y="101" width="269" height="179"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner1" translatesAutoresizingMaskIntoConstraints="NO" id="j6z-LT-C7R">
+                        <rect key="frame" x="0.0" y="101" width="269" height="211"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <real key="value" value="5"/>
@@ -65,7 +65,6 @@
             <constraints>
                 <constraint firstItem="utS-wJ-vEE" firstAttribute="top" secondItem="pTL-N1-aNT" secondAttribute="top" constant="1" id="4F2-zE-0hn"/>
                 <constraint firstItem="j6z-LT-C7R" firstAttribute="leading" secondItem="pTL-N1-aNT" secondAttribute="leading" id="6Ef-q6-3Jf"/>
-                <constraint firstAttribute="bottom" secondItem="j6z-LT-C7R" secondAttribute="bottom" constant="32" id="6PT-pH-GhV"/>
                 <constraint firstAttribute="trailing" secondItem="1ut-EI-Dk1" secondAttribute="trailing" constant="5" id="GbK-Nu-DXd"/>
                 <constraint firstItem="1ut-EI-Dk1" firstAttribute="top" secondItem="utS-wJ-vEE" secondAttribute="bottom" constant="10" id="J3A-aE-gAa"/>
                 <constraint firstAttribute="trailing" secondItem="Cjs-RV-5tZ" secondAttribute="trailing" constant="5" id="P6d-jc-8vN"/>
@@ -74,6 +73,7 @@
                 <constraint firstItem="j6z-LT-C7R" firstAttribute="top" secondItem="Cjs-RV-5tZ" secondAttribute="bottom" constant="14" id="UTK-zi-xos"/>
                 <constraint firstItem="Cjs-RV-5tZ" firstAttribute="top" secondItem="NKD-m8-JdR" secondAttribute="bottom" constant="5" id="XNi-qI-2RX"/>
                 <constraint firstAttribute="trailing" secondItem="NKD-m8-JdR" secondAttribute="trailing" constant="5" id="Xan-Cc-oM5"/>
+                <constraint firstAttribute="bottom" secondItem="j6z-LT-C7R" secondAttribute="bottom" id="ZsN-Gm-vym"/>
                 <constraint firstItem="Cjs-RV-5tZ" firstAttribute="leading" secondItem="pTL-N1-aNT" secondAttribute="leading" id="aeq-sq-TOF"/>
                 <constraint firstItem="1ut-EI-Dk1" firstAttribute="leading" secondItem="pTL-N1-aNT" secondAttribute="leading" id="b2h-ir-OV5"/>
                 <constraint firstItem="NKD-m8-JdR" firstAttribute="top" secondItem="1ut-EI-Dk1" secondAttribute="bottom" constant="5" id="cTe-rj-4Op"/>
@@ -91,6 +91,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Banner" width="335" height="215"/>
+        <image name="Banner1" width="335" height="215"/>
     </resources>
 </document>

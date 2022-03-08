@@ -8,7 +8,7 @@ class TableCellTypeA: UITableViewCell {
     @IBOutlet weak var secondaryTitle: UILabel!
     @IBOutlet weak var cardDescription: UILabel!
     @IBOutlet weak var contentContainerView: UIView!
-    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var appImage: UIImageView!
     
     // MARK: - Lifecycle Methods
     override func awakeFromNib() {
@@ -19,6 +19,11 @@ class TableCellTypeA: UITableViewCell {
     // MARK: - Private Methods
     private func configureView() {
         primaryTitle.textColor = Color.lightBrownColor
-        contentContainerView.setCornerRadius(10, andClipContent: true)
+        contentContainerView.layer.shadowColor = UIColor.gray.cgColor
+        contentContainerView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        contentContainerView.layer.shadowRadius = 12.0
+        contentContainerView.layer.shadowOpacity = 0.5
+        appImage.layer.cornerRadius = 10
+        appImage.clipsToBounds
     }
 }

@@ -82,9 +82,10 @@
         <!--Apps-->
         <scene sceneID="XA4-ga-dSa">
             <objects>
-                <navigationController navigationBarHidden="YES" id="DOf-nC-LOg" sceneMemberID="viewController">
+                <navigationController id="DOf-nC-LOg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Apps" image="Apps" selectedImage="Selected Apps" id="p0W-hD-KSW"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e0R-1x-qG4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

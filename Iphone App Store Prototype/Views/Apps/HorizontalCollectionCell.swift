@@ -16,5 +16,8 @@ class HorizontalCollectionCell: UICollectionViewCell {
     }
     
     // MARK: - Private Methods
-    private func configureView() { }
+    private func configureView() {
+        image.clipsToBounds = true
+        image.layer.cornerRadius = 10.0
+    }
 }

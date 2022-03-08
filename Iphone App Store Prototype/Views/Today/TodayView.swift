@@ -9,7 +9,6 @@ class TodayView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         formatUIEObjects()
-        
     }
     
     // MARK: - Private Methods

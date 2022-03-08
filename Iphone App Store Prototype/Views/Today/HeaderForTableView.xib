@@ -41,7 +41,6 @@
                             </constraints>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="HuK-j1-UNG" firstAttribute="leading" secondItem="OIP-lO-pY0" secondAttribute="leading" id="7Wv-Z9-iAN"/>
                         <constraint firstAttribute="bottom" secondItem="HuK-j1-UNG" secondAttribute="bottom" id="C6h-31-QFo"/>
@@ -53,7 +52,6 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="ozH-o7-bKx"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="OIP-lO-pY0" firstAttribute="leading" secondItem="ozH-o7-bKx" secondAttribute="leading" constant="19" id="0Zn-31-GdP"/>
                 <constraint firstItem="ozH-o7-bKx" firstAttribute="bottom" secondItem="OIP-lO-pY0" secondAttribute="bottom" id="FNd-PH-86H"/>

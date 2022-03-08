@@ -36,7 +36,7 @@ extension TodayViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: TableCellTypeA.reuseIdentifierForTable, for: indexPath) as? TableCellTypeA else { fatalError("xib doesn't exist")
             }
             return cell
-
+            
         } else {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: TableCellTypeB.reuseIdentifierForTable, for: indexPath) as? TableCellTypeB else { fatalError("xib doesn't exist")
             }
