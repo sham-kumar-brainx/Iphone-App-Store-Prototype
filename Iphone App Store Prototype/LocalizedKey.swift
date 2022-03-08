@@ -42,4 +42,5 @@ enum LocalizedKey: String {
     case moodsDescription = "Tell us how you are feeling today and we will share some suggestions. Select all that apply."
     case moreActionView = "MoreActionView"
     case notDequeueableCell = "Unable to dequeue MoodsTableViewCell"
+    case noneError = "Should not be none"
 }

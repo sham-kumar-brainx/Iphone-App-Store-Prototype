@@ -14,8 +14,8 @@ class TodayViewController: BaseViewController {
     // MARK: - Private Methods
     private func setUpTableView() {
         todayView.todayTableView.register(HeaderForTableView.nibForTableHeaderFooter(), forHeaderFooterViewReuseIdentifier: HeaderForTableView.identifierForTableHeaderFooter)
-        todayView.todayTableView.register(HorizontalCollectionCell.nibForTable(), forCellReuseIdentifier: HorizontalCollectionCell.reuseIdentifierForTable)
-        todayView.todayTableView.register(VerticalCollectionCell.nibForTable(), forCellReuseIdentifier: VerticalCollectionCell.reuseIdentifierForTable)
+        todayView.todayTableView.register(TableCellTypeA.nibForTable(), forCellReuseIdentifier: TableCellTypeA.reuseIdentifierForTable)
+        todayView.todayTableView.register(TableCellTypeB.nibForTable(), forCellReuseIdentifier: TableCellTypeB.reuseIdentifierForTable)
     }
 }
 
@@ -23,8 +23,8 @@ class TodayViewController: BaseViewController {
 
 extension TodayViewController: UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 440
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,12 +33,12 @@ extension TodayViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: HorizontalCollectionCell.reuseIdentifierForTable, for: indexPath) as? HorizontalCollectionCell else { fatalError("xib doesn't exist")
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: TableCellTypeA.reuseIdentifierForTable, for: indexPath) as? TableCellTypeA else { fatalError("xib doesn't exist")
             }
             return cell
 
         } else {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: VerticalCollectionCell.reuseIdentifierForTable, for: indexPath) as? VerticalCollectionCell else { fatalError("xib doesn't exist")
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: TableCellTypeB.reuseIdentifierForTable, for: indexPath) as? TableCellTypeB else { fatalError("xib doesn't exist")
             }
             return cell
         }
@@ -52,15 +52,10 @@ extension TodayViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 62
+        return 70
     }
     
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 50))
-        return footerView
-    }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 30
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 440
     }
 }

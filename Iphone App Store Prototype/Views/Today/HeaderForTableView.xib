@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -23,7 +22,7 @@
                     <rect key="frame" x="19" y="44" width="269" height="91"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEDNESDAY 2 MAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tek-Tf-w5p" userLabel="Date">
-                            <rect key="frame" x="0.0" y="0.0" width="129.5" height="16"/>
+                            <rect key="frame" x="0.0" y="15" width="129.5" height="16"/>
                             <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="13"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -42,14 +41,14 @@
                             </constraints>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="HuK-j1-UNG" firstAttribute="leading" secondItem="OIP-lO-pY0" secondAttribute="leading" id="7Wv-Z9-iAN"/>
                         <constraint firstAttribute="bottom" secondItem="HuK-j1-UNG" secondAttribute="bottom" id="C6h-31-QFo"/>
                         <constraint firstItem="Tek-Tf-w5p" firstAttribute="leading" secondItem="OIP-lO-pY0" secondAttribute="leading" id="Gvc-vJ-RMv"/>
                         <constraint firstAttribute="trailing" secondItem="ahT-T2-OPQ" secondAttribute="trailing" id="iBg-jm-M7M"/>
                         <constraint firstAttribute="bottom" secondItem="ahT-T2-OPQ" secondAttribute="bottom" constant="4" id="mB7-6H-Tw4"/>
-                        <constraint firstItem="Tek-Tf-w5p" firstAttribute="top" secondItem="OIP-lO-pY0" secondAttribute="top" id="pwR-y5-agT"/>
+                        <constraint firstItem="Tek-Tf-w5p" firstAttribute="top" secondItem="OIP-lO-pY0" secondAttribute="top" constant="15" id="pwR-y5-agT"/>
                     </constraints>
                 </view>
             </subviews>
@@ -72,8 +71,5 @@
     </objects>
     <resources>
         <image name="Profile" width="40" height="40"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

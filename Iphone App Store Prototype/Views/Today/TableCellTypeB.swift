@@ -1,14 +1,16 @@
-import Foundation
 import UIKit
 
-class HorizontalCollectionCell: UITableViewCell {
+class TableCellTypeB: UITableViewCell {
     
     // MARK: - Outlets
-    @IBOutlet weak var primaryTitle: UILabel!
-    @IBOutlet weak var secondaryTitle: UILabel!
-    @IBOutlet weak var cardDescription: UILabel!
     @IBOutlet weak var contentContainerView: UIView!
-    @IBOutlet weak var backgroundImage: UIImageView!
+    
+    @IBInspectable var cornerRadius: CGFloat = 10
+
+    @IBInspectable var shadowOffsetWidth: Int = 0
+    @IBInspectable var shadowOffsetHeight: Int = 3
+    @IBInspectable var shadowColor: UIColor? = UIColor.white
+    @IBInspectable var shadowOpacity: Float = 0.5
     
     // MARK: - Lifecycle Methods
     override func awakeFromNib() {
@@ -18,7 +20,6 @@ class HorizontalCollectionCell: UITableViewCell {
     
     // MARK: - Private Methods
     private func configureView() {
-        primaryTitle.textColor = Color.lightBrownColor
         contentContainerView.setCornerRadius(10, andClipContent: true)
     }
 }
