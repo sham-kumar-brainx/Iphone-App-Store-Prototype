@@ -41,7 +41,7 @@
                             <constraint firstAttribute="height" constant="0.80000000000000004" id="5qN-gp-JjJ"/>
                         </constraints>
                     </view>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner1" translatesAutoresizingMaskIntoConstraints="NO" id="j6z-LT-C7R">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner_1" translatesAutoresizingMaskIntoConstraints="NO" id="j6z-LT-C7R">
                         <rect key="frame" x="0.0" y="101" width="269" height="211"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -83,14 +83,14 @@
             <size key="customSize" width="269" height="312"/>
             <connections>
                 <outlet property="appDescription" destination="Cjs-RV-5tZ" id="17j-f7-Ndz"/>
+                <outlet property="appIconImage" destination="j6z-LT-C7R" id="mQg-pO-AZE"/>
                 <outlet property="feature" destination="1ut-EI-Dk1" id="cTJ-77-qaQ"/>
-                <outlet property="image" destination="j6z-LT-C7R" id="mQg-pO-AZE"/>
                 <outlet property="title" destination="NKD-m8-JdR" id="9rA-gv-AeB"/>
             </connections>
             <point key="canvasLocation" x="100.72463768115942" y="-205.58035714285714"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Banner1" width="335" height="215"/>
+        <image name="Banner_1" width="335" height="215"/>
     </resources>
 </document>

@@ -5,7 +5,7 @@ class HorizontalCollectionCell: UICollectionViewCell {
     
     // MARK: - Outlets
     @IBOutlet weak var feature: UILabel!
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var appIconImage: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var appDescription: UILabel!
     
@@ -17,7 +17,15 @@ class HorizontalCollectionCell: UICollectionViewCell {
     
     // MARK: - Private Methods
     private func configureView() {
-        image.clipsToBounds = true
-        image.layer.cornerRadius = 10.0
+        appIconImage.clipsToBounds = true
+        appIconImage.layer.cornerRadius = 10.0
+    }
+    
+    // MARK: - Internal Methods
+    func setCellDataWith(_ model: GameRecommendModel) {
+        feature.text = model.feature
+        appDescription.text = model.appDescription
+        title.text = model.appName
+        appIconImage.image = UIImage(named: model.appIconImage)
     }
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-struct GameRecommandModel {
+struct GameRecommendModel {
     
     // MARK: - Internal Properties
     let feature: String

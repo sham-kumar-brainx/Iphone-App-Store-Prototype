@@ -55,10 +55,12 @@
 		D9D1561C27D62E990051C526 /* AppsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9D1561A27D62E990051C526 /* AppsCollectionViewCell.xib */; };
 		D9D1561F27D62ECD0051C526 /* AppsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1561E27D62ECD0051C526 /* AppsCollectionViewCell.swift */; };
 		D9D1562327D63E3D0051C526 /* GameTopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1562127D63E3C0051C526 /* GameTopicModel.swift */; };
-		D9D1562427D63E3D0051C526 /* GameRecommandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1562227D63E3D0051C526 /* GameRecommandModel.swift */; };
+		D9D1562427D63E3D0051C526 /* GameRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1562227D63E3D0051C526 /* GameRecommendModel.swift */; };
 		D9D1562627D71D9A0051C526 /* AppsCategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1562527D71D9A0051C526 /* AppsCategoryHeader.swift */; };
 		D9D1562827D71DDA0051C526 /* AppsCategoryHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9D1562727D71DDA0051C526 /* AppsCategoryHeader.xib */; };
 		D9D1562A27D72A0A0051C526 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1562927D72A0A0051C526 /* UIViewController.swift */; };
+		D9D1562E27D76ED80051C526 /* GameRecommandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1562D27D76ED80051C526 /* GameRecommandViewModel.swift */; };
+		D9D1563027D76EDF0051C526 /* GameTopicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1562F27D76EDF0051C526 /* GameTopicViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,10 +135,12 @@
 		D9D1561A27D62E990051C526 /* AppsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppsCollectionViewCell.xib; sourceTree = "<group>"; };
 		D9D1561E27D62ECD0051C526 /* AppsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9D1562127D63E3C0051C526 /* GameTopicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTopicModel.swift; sourceTree = "<group>"; };
-		D9D1562227D63E3D0051C526 /* GameRecommandModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRecommandModel.swift; sourceTree = "<group>"; };
+		D9D1562227D63E3D0051C526 /* GameRecommendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRecommendModel.swift; sourceTree = "<group>"; };
 		D9D1562527D71D9A0051C526 /* AppsCategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsCategoryHeader.swift; sourceTree = "<group>"; };
 		D9D1562727D71DDA0051C526 /* AppsCategoryHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppsCategoryHeader.xib; sourceTree = "<group>"; };
 		D9D1562927D72A0A0051C526 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		D9D1562D27D76ED80051C526 /* GameRecommandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRecommandViewModel.swift; sourceTree = "<group>"; };
+		D9D1562F27D76EDF0051C526 /* GameTopicViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTopicViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +238,7 @@
 		D96D5EC227D0E0A500EC41D9 /* Iphone App Store Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				D9D1562C27D76EC20051C526 /* View Models */,
 				D9D1562027D63E2B0051C526 /* Models */,
 				D939E81E27D1E8BF005F0A3D /* Views */,
 				D939E81127D1E12B005F0A3D /* Globals */,
@@ -350,10 +355,19 @@
 		D9D1562027D63E2B0051C526 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D9D1562227D63E3D0051C526 /* GameRecommandModel.swift */,
+				D9D1562227D63E3D0051C526 /* GameRecommendModel.swift */,
 				D9D1562127D63E3C0051C526 /* GameTopicModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D9D1562C27D76EC20051C526 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9D1562F27D76EDF0051C526 /* GameTopicViewModel.swift */,
+				D9D1562D27D76ED80051C526 /* GameRecommandViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,6 +518,7 @@
 				D939E81D27D1E3FA005F0A3D /* FontsName.swift in Sources */,
 				D9D155F327D5E0F20051C526 /* UICollectionViewCell.swift in Sources */,
 				D939E81927D1E12B005F0A3D /* Colors.swift in Sources */,
+				D9D1563027D76EDF0051C526 /* GameTopicViewModel.swift in Sources */,
 				D939E81B27D1E1CC005F0A3D /* UIColor.swift in Sources */,
 				D9D1560127D6116E0051C526 /* Section.swift in Sources */,
 				D939E82027D1E8DB005F0A3D /* TodayView.swift in Sources */,
@@ -515,7 +530,7 @@
 				D9D1562A27D72A0A0051C526 /* UIViewController.swift in Sources */,
 				D9D1562627D71D9A0051C526 /* AppsCategoryHeader.swift in Sources */,
 				D9D155FD27D5F7AC0051C526 /* GradientDirection.swift in Sources */,
-				D9D1562427D63E3D0051C526 /* GameRecommandModel.swift in Sources */,
+				D9D1562427D63E3D0051C526 /* GameRecommendModel.swift in Sources */,
 				D939E81627D1E12B005F0A3D /* Helpers.swift in Sources */,
 				D9D155DF27D5D3B80051C526 /* HeaderForTableView.swift in Sources */,
 				D9D155F427D5E0F20051C526 /* UICollectionReusableView.swift in Sources */,
@@ -523,6 +538,7 @@
 				D9D1561F27D62ECD0051C526 /* AppsCollectionViewCell.swift in Sources */,
 				D9D1562327D63E3D0051C526 /* GameTopicModel.swift in Sources */,
 				D9D155E527D5D7D00051C526 /* TableCellTypeB.swift in Sources */,
+				D9D1562E27D76ED80051C526 /* GameRecommandViewModel.swift in Sources */,
 				D9A990BF27D1333F000D455A /* AppsViewController.swift in Sources */,
 				D9A990C127D1335C000D455A /* UpdatesViewController.swift in Sources */,
 				D96D5EC427D0E0A500EC41D9 /* AppDelegate.swift in Sources */,

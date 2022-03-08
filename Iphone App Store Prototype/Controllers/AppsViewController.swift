@@ -4,10 +4,10 @@ class AppsViewController: BaseViewController {
     
     // MARK: - Outlets
     @IBOutlet var appsView: AppsView!
-    
-    var storedOffsets = [Int: CGFloat]()
-    
-    //     MARK: - Private Properties
+        
+    // MARK: - Private Properties
+    private var gameTopicList = GameTopicViewModel().gameTopicList
+    private var gameRecommandList = GameRecommandViewModel().gameRecommandList
     private lazy var compositionalLayout: UICollectionViewCompositionalLayout = {
         let layout = UICollectionViewCompositionalLayout { [weak self]
             (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
@@ -64,10 +64,8 @@ class AppsViewController: BaseViewController {
     func setupVerticalScrollSection() -> NSCollectionLayoutSection {
         let item = NSCollectionLayoutItem(
             layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(0)))
-        //        item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 0, bottom: 0, trailing: 15)
         let group = NSCollectionLayoutGroup.vertical(
             layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.90), heightDimension: .absolute(270)), subitem: item, count: 3)
-        //        group.contentInsets = NSDirectionalEdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 16.0)
         let section = NSCollectionLayoutSection(group: group)
         section.interGroupSpacing = 10
         section.contentInsets = NSDirectionalEdgeInsets(top: 10.0, leading: 16.0, bottom: 0.0, trailing: 16.0)
@@ -98,9 +96,9 @@ extension AppsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch Section(rawValue: section) {
         case .horizontalScroll:
-            return 3
+            return gameRecommandList.count
         case .verticalScroll:
-            return 10
+            return gameTopicList.count
         case .none:
             fatalError(LocalizedKey.noneError.string)
         }
@@ -110,11 +108,11 @@ extension AppsViewController: UICollectionViewDataSource {
         switch Section(rawValue: indexPath.section) {
         case .horizontalScroll:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HorizontalCollectionCell.reuseIdentifier, for: indexPath as IndexPath) as! HorizontalCollectionCell
-            //            cell.setCellData(with: horizentalItemListData[indexPath.row])
+            cell.setCellDataWith(gameRecommandList[indexPath.row])
             return cell
         case .verticalScroll:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AppsCollectionViewCell.reuseIdentifier, for: indexPath) as! AppsCollectionViewCell
-            //            cell.setCellData(with: verticalItemListData[indexPath.row])
+            cell.setCellDataWith(gameTopicList[indexPath.row])
             return cell
         case .none:
             fatalError(LocalizedKey.noneError.string)

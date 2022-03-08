@@ -19,4 +19,12 @@ class AppsCollectionViewCell: UICollectionViewCell {
     private func configureView() {
         getButton.setCornerRadius(15)
     }
+    
+    // MARK: - Internal Methods
+    func setCellDataWith(_ model: GameTopicModel) {
+        appName.text = model.appName
+        appDescription.text = model.appDescription
+        inAppPurchase.text = model.inAppPurchaseStatus
+        appIconImage.image = UIImage(named: model.appIconImage)
+    }
 }
