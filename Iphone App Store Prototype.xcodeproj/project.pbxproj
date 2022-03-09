@@ -203,6 +203,10 @@
 		D939E81E27D1E8BF005F0A3D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D9DDE73027D8C82000B40BEA /* Search */,
+				D9DDE72F27D8C81400B40BEA /* Updates */,
+				D9DDE72E27D8C80100B40BEA /* Games */,
+				D9DDE72D27D8C7F400B40BEA /* Base */,
 				D9D1560227D611D70051C526 /* Apps */,
 				D9D155DB27D5D2950051C526 /* Today */,
 			);
@@ -232,13 +236,13 @@
 		D96D5EC227D0E0A500EC41D9 /* Iphone App Store Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				D9DDE72C27D8C73300B40BEA /* Components */,
 				D9D1562C27D76EC20051C526 /* View Models */,
 				D9D1562027D63E2B0051C526 /* Models */,
 				D939E81E27D1E8BF005F0A3D /* Views */,
 				D939E81127D1E12B005F0A3D /* Globals */,
 				D939E80C27D1E0B0005F0A3D /* Extentions */,
 				D939E80427D1DD6B005F0A3D /* Fonts */,
-				D96D5EF427D0E0E500EC41D9 /* Controllers */,
 				D96D5EF527D0E0F500EC41D9 /* Supporting Files */,
 				D96D5EF327D0E0C300EC41D9 /* Storyboards */,
 				D96D5EF627D0E10A00EC41D9 /* Resources */,
@@ -273,19 +277,6 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		D96D5EF427D0E0E500EC41D9 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				D9A990B827D132DE000D455A /* BaseViewController.swift */,
-				D9A990B927D132DE000D455A /* TodayViewController.swift */,
-				D9A990BC27D13320000D455A /* GamesViewController.swift */,
-				D9A990BE27D1333F000D455A /* AppsViewController.swift */,
-				D9A990C027D1335C000D455A /* UpdatesViewController.swift */,
-				D9A990C227D13383000D455A /* SearchViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		D96D5EF527D0E0F500EC41D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,12 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				D939E81F27D1E8DB005F0A3D /* TodayView.swift */,
-				D9D155DE27D5D3B80051C526 /* HeaderForTableView.swift */,
-				D9D155DC27D5D2F30051C526 /* HeaderForTableView.xib */,
-				D9D155E227D5D7D00051C526 /* TableCellTypeA.swift */,
-				D9D155E027D5D7D00051C526 /* TableCellTypeA.xib */,
-				D9D155E127D5D7D00051C526 /* TableCellTypeB.swift */,
-				D9D155E327D5D7D00051C526 /* TableCellTypeB.xib */,
+				D9A990B927D132DE000D455A /* TodayViewController.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -320,17 +306,8 @@
 		D9D1560227D611D70051C526 /* Apps */ = {
 			isa = PBXGroup;
 			children = (
-				D9D1561A27D62E990051C526 /* AppsCategoryCell.xib */,
-				D9D1561E27D62ECD0051C526 /* AppsCategoryCell.swift */,
-				D9D1560527D611EA0051C526 /* RecommendedAppsCell.xib */,
-				D9D1560727D611EA0051C526 /* RecommendedAppsCell.swift */,
-				D9D1560827D611EA0051C526 /* RecommendedAppsHeader.xib */,
-				D9D1560B27D611EA0051C526 /* RecommendedAppsHeader.swift */,
-				D9D1560A27D611EA0051C526 /* FooterView.swift */,
-				D9D1560427D611EA0051C526 /* FooterView.xib */,
 				D9D1561827D61FD90051C526 /* AppsView.swift */,
-				D9D1562527D71D9A0051C526 /* AppsCategoryHeader.swift */,
-				D9D1562727D71DDA0051C526 /* AppsCategoryHeader.xib */,
+				D9A990BE27D1333F000D455A /* AppsViewController.swift */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -351,6 +328,77 @@
 				D9D1562D27D76ED80051C526 /* RecommandAppsViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		D9DDE72C27D8C73300B40BEA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D9DDE73227D8C90700B40BEA /* AppsCollectionViewComponents */,
+				D9DDE73127D8C88E00B40BEA /* TodaysTableViewComponents */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D9DDE72D27D8C7F400B40BEA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D9A990B827D132DE000D455A /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D9DDE72E27D8C80100B40BEA /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				D9A990BC27D13320000D455A /* GamesViewController.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		D9DDE72F27D8C81400B40BEA /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				D9A990C027D1335C000D455A /* UpdatesViewController.swift */,
+			);
+			path = Updates;
+			sourceTree = "<group>";
+		};
+		D9DDE73027D8C82000B40BEA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D9A990C227D13383000D455A /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D9DDE73127D8C88E00B40BEA /* TodaysTableViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				D9D155DE27D5D3B80051C526 /* HeaderForTableView.swift */,
+				D9D155DC27D5D2F30051C526 /* HeaderForTableView.xib */,
+				D9D155E227D5D7D00051C526 /* TableCellTypeA.swift */,
+				D9D155E027D5D7D00051C526 /* TableCellTypeA.xib */,
+				D9D155E127D5D7D00051C526 /* TableCellTypeB.swift */,
+				D9D155E327D5D7D00051C526 /* TableCellTypeB.xib */,
+			);
+			path = TodaysTableViewComponents;
+			sourceTree = "<group>";
+		};
+		D9DDE73227D8C90700B40BEA /* AppsCollectionViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				D9D1561A27D62E990051C526 /* AppsCategoryCell.xib */,
+				D9D1561E27D62ECD0051C526 /* AppsCategoryCell.swift */,
+				D9D1560527D611EA0051C526 /* RecommendedAppsCell.xib */,
+				D9D1560727D611EA0051C526 /* RecommendedAppsCell.swift */,
+				D9D1560827D611EA0051C526 /* RecommendedAppsHeader.xib */,
+				D9D1560B27D611EA0051C526 /* RecommendedAppsHeader.swift */,
+				D9D1560A27D611EA0051C526 /* FooterView.swift */,
+				D9D1560427D611EA0051C526 /* FooterView.xib */,
+				D9D1562527D71D9A0051C526 /* AppsCategoryHeader.swift */,
+				D9D1562727D71DDA0051C526 /* AppsCategoryHeader.xib */,
+			);
+			path = AppsCollectionViewComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
