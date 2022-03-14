@@ -8,6 +8,7 @@ class AppsCategoryCell: UICollectionViewCell {
     @IBOutlet weak var appDescription: UILabel!
     @IBOutlet weak var inAppPurchase: UILabel!
     @IBOutlet weak var getButton: UIButton!
+    @IBOutlet weak var bottomLine: UIView!
     
     // MARK: - Lifecycle Methods
     override func awakeFromNib() {
@@ -26,5 +27,9 @@ class AppsCategoryCell: UICollectionViewCell {
         appDescription.text = model.appDescription
         inAppPurchase.text = model.inAppPurchaseStatus
         appIconImage.image = UIImage(named: model.appIconImage)
+    }
+    
+    func hideBottomLine() {
+        bottomLine.isHidden = true
     }
 }
