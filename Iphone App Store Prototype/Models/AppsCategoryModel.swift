@@ -10,6 +10,8 @@ struct AppsCategoryModel: Hashable {
 }
 
 extension AppsCategoryModel {
+    
+    // MARK: - Static Properties
     static let allAppsCategories: [AppsCategoryModel] = [
         AppsCategoryModel(appName: LocalizedKey.hungryMessage.string, appDescription: LocalizedKey.exploreWorld.string, appIconImage: Images.appIcon1, inAppPurchaseStatus: LocalizedKey.inAppPurchase.string),
         AppsCategoryModel(appName: LocalizedKey.unsplash.string, appDescription: LocalizedKey.photosForEveryOne.string, appIconImage: Images.appIcon2, inAppPurchaseStatus: LocalizedKey.emptyString.string),

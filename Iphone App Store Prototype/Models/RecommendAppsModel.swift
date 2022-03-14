@@ -10,6 +10,8 @@ struct RecommendAppsModel: Hashable {
 }
 
 extension RecommendAppsModel {
+    
+    // MARK: - Static Properties
     static let allRecommendedApps: [RecommendAppsModel] = [
         RecommendAppsModel(feature: LocalizedKey.feature.string, appName: LocalizedKey.marvelAvengers.string, appDescription: LocalizedKey.yourFavouriteHeroes.string, appIconImage: Images.banner1),
         RecommendAppsModel(feature: LocalizedKey.nowOnMessage.string, appName: LocalizedKey.marvelAvengers.string, appDescription: LocalizedKey.yourFavouriteHeroes.string, appIconImage: Images.banner2)

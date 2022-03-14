@@ -42,6 +42,11 @@ class AppsViewController: BaseViewController, UIScrollViewDelegate {
         generateData(animated: true)
     }
     
+    // MARK: - Internal Methods
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        self.title = scrollView.contentOffset.y > 35 ? LocalizedKey.appsTitle.string : LocalizedKey.emptyString.string
+    }
+    
     // MARK: - Private Methods
     private func setUpCollectionView() {
         appsView.appsCollectionView.register(RecommendedAppsCell.nibForCollection(), forCellWithReuseIdentifier: RecommendedAppsCell.reuseIdentifierForCollection)
@@ -75,15 +80,6 @@ class AppsViewController: BaseViewController, UIScrollViewDelegate {
         return layout
     }
     
-    // MARK: - Internal Methods
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        self.title = scrollView.contentOffset.y > 35 ? LocalizedKey.appsTitle.string : LocalizedKey.emptyString.string
-    }
-}
-
-extension AppsViewController {
-    
-    // MARK: configureDatasource
     private func configureDatasource() {
         datasource = Datasource(collectionView: appsView.appsCollectionView, cellProvider: { [unowned self] collectionView, indexPath, item in
             return cell(collectionView: collectionView, indexPath: indexPath, item: item)
